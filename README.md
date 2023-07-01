@@ -2,6 +2,8 @@
 
 Social Planner Calendar is a simple WordPress plugin that allows you to intuitively view all scheduled posts with the popular [Social Planner plugin](https://github.com/antonlukin/social-planner).
 
+![image](https://github.com/Ymil/social-planner-calendar/assets/10056152/21044ef4-7295-4538-9487-2a19df939cf7)
+
 
 ## Installation
 
