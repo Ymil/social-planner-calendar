@@ -2,7 +2,7 @@
 /*
 Plugin Name: Social Planner Calendar
 Description: Social Planner Calendar is a simple WordPress plugin that allows you to intuitively view all scheduled posts with the popular Social Planner plugin.
-Version: 1.0
+Version: 1.0.1
 Author: Lautaro Linquimán
 Author URI: https://github.com/Ymil/
 Project URI: https://github.com/Ymil/social-planner-calendar
@@ -18,7 +18,7 @@ function social_planner_calendar_get_cron_events()
                 $args = $hook_events[array_keys($hook_events)[0]]["args"];
                 $post_id = $args[1];
                 $event = array(
-                    "start" => date('Y-m-d\TH:i:s', $time),
+                    "start" => wp_date('Y-m-d\TH:i:s', $time),
                     "title" => get_the_title($post_id),
                     "url" => get_edit_post_link($post_id, "&"),
                     "image" => get_the_post_thumbnail_url($post_id, 'thumbnail')
